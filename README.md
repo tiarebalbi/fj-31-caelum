@@ -1,3 +1,8 @@
+
+Repositorio para arquivos que serão desenvolvidos durante o curso FJ-31 da Caelum.
+
+Descrição:
+
 Curso Java EE avançado e Web Services | FJ-31
 [ 40 horas aula ]
 
@@ -8,3 +13,9 @@ A tecnologia EJB é bastante rebuscada, que pode deixar o iniciante um pouco per
 Pré-requisitos: 
 
 Curso FJ-11 ou equivalente, FJ-21 recomendado. Recomendável conhecimentos básicos de JPA ou curso FJ-25.
+
+Maiores Informações
+
+http://www.caelum.com.br/curso-java-ee-web-services/
+
+
