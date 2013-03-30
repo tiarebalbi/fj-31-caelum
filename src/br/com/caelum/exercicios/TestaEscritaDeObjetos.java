@@ -17,7 +17,7 @@ public class TestaEscritaDeObjetos {
 		Livro l1 = new Livro();
 		l1.setNome("Livro 1");
 		l1.setPreco("31.00");
-		
+ 		
 		Livro l2 = new Livro();
 		l2.setNome("Livro 2");
 		l2.setPreco("32.00");

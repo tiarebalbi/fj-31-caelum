@@ -2,14 +2,12 @@ package br.com.caelum.exercicios.models;
 
 import java.io.Serializable;
 
+
 public class Livro implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
-	private transient String nome;
+	private String nome;
 	
 	private String preco;
 

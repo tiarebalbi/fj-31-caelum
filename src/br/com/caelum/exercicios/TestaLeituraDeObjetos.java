@@ -8,7 +8,7 @@ import java.util.List;
 
 import br.com.caelum.exercicios.models.Livro;
 
-public class TestaLeituraDeObjetos {
+public class TestaLeituraDeObjetos  {
 
 	
 	public static void main (String[] args) throws ClassNotFoundException, FileNotFoundException, IOException {
