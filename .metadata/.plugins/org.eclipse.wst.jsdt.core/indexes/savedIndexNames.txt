@@ -1,0 +1,9 @@
+INDEX VERSION 1.122+/home/csokol/caelum/tmp/workspace-fj31/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+974723287.index
+3144066667.index
+4237212528.index
+4110540070.index
+2285031963.index
+1242651147.index
+2452336224.index
+3168648185.index

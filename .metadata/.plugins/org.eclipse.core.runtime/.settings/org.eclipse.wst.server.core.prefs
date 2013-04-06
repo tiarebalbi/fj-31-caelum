@@ -1,0 +1,4 @@
+#Wed Aug 22 18:19:23 BRT 2012
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes/>\n
+eclipse.preferences.version=1
