@@ -37,7 +37,7 @@ public class AgendadorBean implements Agendador {
 		System.out.println("Executou: " + timer.getInfo());
 	}
 	
-	@Schedule(hour="*", minute="*", second="5,15,20", persistent=false)
+	@Schedule(hour="1,8,15", minute="*", second="5,15,20", persistent=false)
 	public void fazAlgo(Timer timer) {
 		System.out.println("Executou: @Schedule");
 	}
