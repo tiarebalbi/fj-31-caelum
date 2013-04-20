@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
+import javax.interceptor.ExcludeDefaultInterceptors;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -12,9 +14,11 @@ import javax.persistence.Query;
 import br.com.caelum.loja.entity.Autor;
 import br.com.caelum.loja.entity.Livro;
 import br.com.caelum.loja.exception.SalvaLivroException;
+import br.com.caelum.loja.interceptor.AuditoriaInterceptor;
 
 @Stateless
 @Remote(GerenciadorLoja.class)
+@Interceptors(value=AuditoriaInterceptor.class)
 public class GerenciadorLojaBean implements GerenciadorLoja {
 	
 	
@@ -48,7 +52,6 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 	public void salva(Livro livro) {
 		this.manager.persist(livro);
 		System.out.println("Livro salvo! ID: " + livro.getId());
-		throw new SalvaLivroException();
 	}
 
 	@Override
@@ -59,6 +62,7 @@ public class GerenciadorLojaBean implements GerenciadorLoja {
 	}
 
 	@Override
+	@ExcludeDefaultInterceptors
 	public Livro procura(Long id) {
 		return this.manager.find(Livro.class, id);
 	}
