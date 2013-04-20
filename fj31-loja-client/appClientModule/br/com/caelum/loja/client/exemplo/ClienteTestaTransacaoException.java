@@ -17,6 +17,7 @@ public class ClienteTestaTransacaoException {
 		GerenciadorLoja gl = (GerenciadorLoja) ic.lookup("ejb:fj31-loja-ear/fj31-loja-ejb3/GerenciadorLojaBean!br.com.caelum.loja.session.GerenciadorLoja");
 		
 		Livro livro = new Livro();
+		livro.setNome("Rollback");
 		gl.salva(livro);
 	}
 
