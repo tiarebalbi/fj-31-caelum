@@ -18,7 +18,7 @@ public class TesteUnmarshal {
 		
 		Produto produto = (Produto) info.unmarshal(new File("cursos.xml"));
 		
-		System.out.println(produto.getPreco());
+		System.out.println(produto);
 	}
 	
 }

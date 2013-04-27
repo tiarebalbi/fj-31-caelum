@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://webservices.caelum.com.br/" xmlns:tns="http://webservices.caelum.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="calculaParcela" type="tns:calculaParcela"/>
+
+  <xs:element name="calculaParcelaResponse" type="tns:calculaParcelaResponse"/>
+
+  <xs:complexType name="calculaParcela">
+    <xs:sequence>
+      <xs:element name="valorTotal" type="xs:double"/>
+      <xs:element name="quantidade" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculaParcelaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

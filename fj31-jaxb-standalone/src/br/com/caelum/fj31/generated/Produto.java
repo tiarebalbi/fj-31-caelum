@@ -8,6 +8,8 @@
 
 package br.com.caelum.fj31.generated;
 
+import java.util.Calendar;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -140,5 +142,11 @@ public class Produto {
     public void setPreco(Double value) {
         this.preco = value;
     }
+    
+    @Override
+    public String toString() {
+    	return String.format("%s Produto: [ Nome: %s, Preço: %s]", Calendar.getInstance().getTime(), this.nome, this.preco);
+    }
+    
 
 }
