@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><produto><descricao>dawio</descricao><nome>oindqwion</nome><preco>222.0</preco></produto>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<produto>
+	<categoria>
+		<nome>Infoo</nome>
+	</categoria>
+	<descricao>dawio</descricao>
+	<nome>oindqwion</nome>
+	<preco>222.0</preco>
+</produto>

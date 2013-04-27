@@ -14,6 +14,11 @@ public class TesteMarshal {
 		produto.setDescricao("dawio");
 		produto.setPreco(222d);
 		
+		Categoria cat = new Categoria();
+		cat.setNome("Infoo");
+		
+		produto.setCategoria(cat);
+		
 		JAXBContext ctx = JAXBContext.newInstance(Produto.class);
 		Marshaller info = ctx.createMarshaller();
 		info.marshal(produto, new FileOutputStream("bola.xml"));

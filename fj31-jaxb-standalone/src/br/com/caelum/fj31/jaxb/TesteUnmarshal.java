@@ -16,7 +16,7 @@ public class TesteUnmarshal {
 		
 		Produto produto = (Produto) info.unmarshal(new File("bola.xml"));
 		
-		System.out.println(produto.getNome());
+		System.out.println(produto.getCategoria().getNome());
 	}
 	
 }

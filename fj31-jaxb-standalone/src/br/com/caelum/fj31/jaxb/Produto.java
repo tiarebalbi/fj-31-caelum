@@ -10,6 +10,16 @@ public class Produto {
 	private String nome;
 	
 	private String descricao;
+	
+	private Categoria categoria;
+	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
 
 	public double getPreco() {
 		return preco;
