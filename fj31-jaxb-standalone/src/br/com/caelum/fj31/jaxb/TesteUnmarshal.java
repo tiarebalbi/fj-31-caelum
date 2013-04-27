@@ -6,6 +6,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
+import br.com.caelum.fj31.generated.Produto;
+
 
 
 public class TesteUnmarshal {
@@ -14,9 +16,9 @@ public class TesteUnmarshal {
 		JAXBContext ctx = JAXBContext.newInstance(Produto.class);
 		Unmarshaller info = ctx.createUnmarshaller();
 		
-		Produto produto = (Produto) info.unmarshal(new File("bola.xml"));
+		Produto produto = (Produto) info.unmarshal(new File("cursos.xml"));
 		
-		System.out.println(produto.getCategoria().getNome());
+		System.out.println(produto.getPreco());
 	}
 	
 }

@@ -10,7 +10,7 @@
       <xs:element ref="tns:categoria" minOccurs="0"/>
       <xs:element name="descricao" type="xs:string" minOccurs="0"/>
       <xs:element name="nome" type="xs:string" minOccurs="0"/>
-      <xs:element name="preco" type="xs:double"/>
+      <xs:element name="preco" type="xs:double" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 

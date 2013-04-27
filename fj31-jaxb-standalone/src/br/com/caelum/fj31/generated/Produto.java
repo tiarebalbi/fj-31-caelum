@@ -11,6 +11,7 @@ package br.com.caelum.fj31.generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -43,13 +44,14 @@ import javax.xml.bind.annotation.XmlType;
     "nome",
     "preco"
 })
+@XmlRootElement
 public class Produto {
 
     @XmlElement(namespace = "http://www.caelum.com.br/fj31")
-    protected Categoria categoria;
-    protected String descricao;
-    protected String nome;
-    protected double preco;
+    public Categoria categoria;
+    public String descricao;
+    public String nome;
+    public Double preco;
 
     /**
      * Gets the value of the categoria property.
@@ -127,7 +129,7 @@ public class Produto {
      * Gets the value of the preco property.
      * 
      */
-    public double getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
@@ -135,7 +137,7 @@ public class Produto {
      * Sets the value of the preco property.
      * 
      */
-    public void setPreco(double value) {
+    public void setPreco(Double value) {
         this.preco = value;
     }
 

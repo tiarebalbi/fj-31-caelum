@@ -9,6 +9,8 @@ import javax.xml.bind.SchemaOutputResolver;
 import javax.xml.transform.Result;
 import javax.xml.transform.stream.StreamResult;
 
+import br.com.caelum.fj31.generated.Produto;
+
 public class TesteGeraSchema {
 
 	public static void main(String[] args) throws IOException, JAXBException {
@@ -18,7 +20,7 @@ public class TesteGeraSchema {
 			@Override
 			public Result createOutput(String namespaceUri, String suggestedFileName)
 					throws IOException {
-				StreamResult result = new StreamResult(new File("teste.xsd"));
+				StreamResult result = new StreamResult(new File("novo-teste.xsd"));
 				return result;
 			}
 		});
