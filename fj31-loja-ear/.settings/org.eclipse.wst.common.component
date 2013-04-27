@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="fj31-loja-ear">
         <wb-resource deploy-path="/" source-path="/EarContent"/>
         <dependent-module archiveName="fj31-loja-ejb3.jar" deploy-path="/" handle="module:/resource/fj31-loja-ejb3/fj31-loja-ejb3">
@@ -7,6 +6,10 @@
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="fj31-loja-base.jar" deploy-path="/lib" handle="module:/resource/fj31-loja-base/fj31-loja-base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fj31-loja-rest.war" deploy-path="/" handle="module:/resource/fj31-loja-rest/fj31-loja-rest">
+            <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>
