@@ -20,3 +20,6 @@ http://www.caelum.com.br/curso-java-ee-web-services/
 
 Update testing the Prose.io
 
+
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/tiarebalbi/fj-31-caelum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
